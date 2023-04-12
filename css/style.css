@@ -1,0 +1,24 @@
+/* css Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* navigation Bar */
+
+#navbar {
+  display: flex;
+  align-items: center;
+}
+
+/* navigation Bar: Logo and image */
+
+#logo {
+  margin: 24px 24px;
+}
+
+/* navigation Bar: List Styling */
+
+#logo img {
+  margin: 24px 24px;
+}
