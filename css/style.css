@@ -9,16 +9,142 @@
 #navbar {
   display: flex;
   align-items: center;
+  position: relative;
+  top: 0px;
 }
 
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
 /* navigation Bar: Logo and image */
 
 #logo {
-  margin: 24px 24px;
+  margin: 10px 10px;
+}
+
+#logo img {
+  height: 55px;
+  margin: 15px 15px;
 }
 
 /* navigation Bar: List Styling */
+/* #navbar {
+  position: relative;
+} */
 
-#logo img {
-  margin: 24px 24px;
+#navbar ul {
+  display: flex;
+  font-family: "Oswald", sans-serif;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Home Section  */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 524px;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("./bg1.jpg") no-repeat center center/cover;
+  top: 0px;
+  left: 0px;
+  height: 90%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+
+#home h1 {
+  color: rgb(43, 38, 38);
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+#home p {
+  color: rgb(14, 11, 5);
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+
+/* Services Section */
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 3px 6px;
+  border-radius: 28px;
+  background: #f2f2f2;
+}
+#services .box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+}
+
+#services .box p {
+  font-family: "Bree Serif", serif;
+}
+
+/* Utility Classes */
+.h-primary {
+  font-size: 3.8rem;
+  padding: 12px;
+  font-family: "Bree Serif", serif;
+}
+
+.h-secondary {
+  font-size: 2.3rem;
+  padding: 12px;
+  font-family: "Bree Serif", serif;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgb(112, 126, 39);
+  color: whitesmoke;
+  margin: 18px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
 }
